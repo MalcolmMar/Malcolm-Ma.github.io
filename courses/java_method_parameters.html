@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="#">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                    id='dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+
+                                <h1>Java <span class="color_h1">Method Parameters</span></h1>
+                                <div class="ej-clear nextprev">
+
+                                    <a class="ej-left ej-btn" href="java_methods.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_method_overloading.html">Next ❯</a>
+
+                                </div>
+                                <hr>
+                                <h2>Parameters and Arguments</h2>
+                                <p>Information can be passed to methods as parameter. Parameters act as variables inside
+                                    the method.</p>
+                                <p>Parameters are specified after the method name, inside the parentheses.
+                                    You can add as many parameters as you want, just separate them with a comma.</p>
+                                <p>
+                                    The following example has a
+                                    method that takes a <code class="ej-codespan">String</code> called <b>fname</b> as
+                                    parameter.
+                                    When the method is called, we pass along a first name,
+                                    which is used inside the method to print the full name:
+                                </p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" w3-white language-java" data-line="2,7,8,9"><code
+                                            class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span> fname<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span>fname <span
+                                                class="token operator">+</span> <span
+                                                class="token string">" Refsnes"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Liam"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Jenny"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Anja"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Liam Refsnes</span>
+<span class="token comment">// Jenny Refsnes</span>
+<span class="token comment">// Anja Refsnes</span>
+<div aria-hidden="true" data-range="2" class=" line-highlight" data-start="2" style="top: 22px;">
+</div></code></pre>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>When a <strong>parameter</strong> is passed to the method, it is called an
+                                        <strong>argument</strong>. So, from the example above: <code
+                                                class="ej-codespan">fname</code> is a <strong>parameter</strong>, while
+                                        <code class="ej-codespan">Liam</code>, <code class="ej-codespan">Jenny</code>
+                                        and <code class="ej-codespan">Anja</code> are <strong>arguments</strong>.</p>
+                                </div>
+                                <hr>
+                                <h2>Multiple Parameters</h2>
+                                <p>You can have as many parameters as you like:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java" data-line="2"><code
+                                            class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span> fname<span
+                                                class="token punctuation">,</span> <span
+                                                class="token keyword keyword-int">int</span> age<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span>fname <span
+                                                class="token operator">+</span> <span class="token string">" is "</span> <span
+                                                class="token operator">+</span> age<span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Liam"</span><span
+                                                class="token punctuation">,</span> <span
+                                                class="token number">5</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Jenny"</span><span
+                                                class="token punctuation">,</span> <span
+                                                class="token number">8</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token string">"Anja"</span><span
+                                                class="token punctuation">,</span> <span
+                                                class="token number">31</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Liam is 5</span>
+<span class="token comment">// Jenny is 8</span>
+<span class="token comment">// Anja is 31</span><div aria-hidden="true" data-range="2" class=" line-highlight"
+                                                     data-start="2" style="top: 22px;">
+</div></code></pre>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>Note that when you are working with multiple parameters, the method call must
+                                        have the same number of arguments as there are parameters, and the arguments
+                                        must be passed in the same order.</p>
+                                </div>
+                                <hr>
+                                <h2>Return Values</h2>
+                                <p>The <code class="ej-codespan">void</code> keyword, used in the examples above,
+                                    indicates that the method should not return a value. If you
+                                    want the method to return a value, you can use a primitive data type (such as <code
+                                            class="ej-codespan">int</code>,
+                                    <code class="ej-codespan">char</code>, etc.) instead of <code class="ej-codespan">void</code>,
+                                    and use the <code class="ej-codespan">return</code>
+                                    keyword inside the method:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java" data-line="3"><code
+                                            class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int"><strong>int</strong></span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token keyword keyword-int">int</span> x<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token keyword keyword-return"><strong>return</strong></span> <span class="token number">5</span> <span
+                                                class="token operator">+</span> x<span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token number">3</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Outputs 8 (5 + 3)</span>
+<div aria-hidden="true" data-range="3" class=" line-highlight" data-start="3" style="top: 44px;">
+</div></code></pre>
+                                </div>
+                                <p>This example returns the sum of a method's <strong>two parameters</strong>:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int">int</span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token keyword keyword-int">int</span> x<span
+                                                class="token punctuation">,</span> <span
+                                                class="token keyword keyword-int">int</span> y<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> x <span class="token operator">+</span> y<span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token number">5</span><span
+                                                class="token punctuation">,</span> <span
+                                                class="token number">3</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Outputs 8 (5 + 3)</span>
+</code></pre>
+                                </div>
+                                <p>You can also store the result in a variable (recommended, as it is easier to read and
+                                    maintain):</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-int">int</span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token keyword keyword-int">int</span> x<span
+                                                class="token punctuation">,</span> <span
+                                                class="token keyword keyword-int">int</span> y<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token keyword keyword-return">return</span> x <span class="token operator">+</span> y<span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token keyword keyword-int">int</span> z <span class="token operator">=</span> <span
+                                                class="token function">myMethod</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token number">5</span><span
+                                                class="token punctuation">,</span> <span
+                                                class="token number">3</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span>z<span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// Outputs 8 (5 + 3)</span>
+</code></pre>
+                                </div>
+                                <hr>
+                                <h2>A Method with If...Else</h2>
+                                <p>It is common to use <code class="ej-codespan">if...else</code> statements inside
+                                    methods:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span
+                                            class="token keyword keyword-public">public</span> <span
+                                            class="token keyword keyword-class">class</span> <span
+                                            class="token class-name">MyClass</span> <span
+                                            class="token punctuation">{</span>
+
+  <span class="token comment">// Create a checkAge() method with an integer variable called <strong>age</strong></span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span
+                                                class="token function">checkAge</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token keyword keyword-int">int</span> age<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+
+    <span class="token comment">// If age is less than 18, print "access denied"</span>
+    <span class="token keyword keyword-if">if</span> <span class="token punctuation">(</span>age <span
+                                                class="token operator">&lt;</span> <span
+                                                class="token number">18</span><span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span><span class="token string">"Access denied - You are not old enough!"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+
+    <span class="token comment">// If age is greater than 18, print "access granted"</span>
+    <span class="token punctuation">}</span> <span class="token keyword keyword-else">else</span> <span
+                                                class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span
+                                                class="token punctuation">.</span><span
+                                                class="token function">println</span><span
+                                                class="token punctuation">(</span><span class="token string">"Access granted - You are old enough!"</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span
+                                                class="token keyword keyword-static">static</span> <span
+                                                class="token keyword keyword-void">void</span> <span
+                                                class="token function">main</span><span
+                                                class="token punctuation">(</span><span
+                                                class="token class-name">String</span><span
+                                                class="token punctuation">[</span><span
+                                                class="token punctuation">]</span> args<span
+                                                class="token punctuation">)</span> <span
+                                                class="token punctuation">{</span>
+    <span class="token function">checkAge</span><span class="token punctuation">(</span><span
+                                                class="token number">20</span><span
+                                                class="token punctuation">)</span><span
+                                                class="token punctuation">;</span> <span class="token comment">// Call the checkAge method and pass along an age of 20</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Outputs "Access granted - You are old enough!"</span>
+</code></pre>
+                                </div>
+                                <hr>
+                                <div>
+                                    <form autocomplete="off" spellcheck="false" id="ej-exerciseform"
+                                          action="exercise.html?filename=exercise_methods3" method="post"
+                                          target="_blank">
+                                        <h2>Test Yourself With Exercises</h2>
+                                        <div class="exercisewindow">
+                                            <h3>Exercise:</h3>
+                                            <p>Add a <code class="ej-codespan">fname</code> parameter of type <code
+                                                    class="ej-codespan">String</code> to <code class="ej-codespan">myMethod</code>,
+                                                and output "John Doe":</p>
+                                            <div class="exerciseprecontainer">
+<pre style="overflow: auto;">static void myMethod(<input name="ex1" maxlength="6" style="width: 65px;"> <input
+        name="ex2" maxlength="5" style="width: 55px;">) {
+  System.out.println(<input name="ex3" maxlength="5" style="width: 55px;"> + " Doe");
+}
+
+public static void main(String[] args) {
+  myMethod("John");
+}
+</pre>
+                                            </div>
+                                            <br>
+                                            <a class="ej-btn" href="javascript:void(0);"
+                                               onclick="checkAns(['String','fname','fname'])">Submit Answer »</a>
+                                            <a class="ej-btn" id="ansBtn" href="javascript:void(0);"
+                                               onclick="showAns(['String','fname','fname'])">Show Answer »</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="ej-clear nextprev">
+
+                                    <a class="ej-left ej-btn" href="java_methods.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_method_overloading.html">Next ❯</a>
+
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+
+                        <script>
+                            function myAccFunction1(id) {
+                                var x = document.getElementById(id);
+                                if (x.className.indexOf("ej-hide") == -1) {
+                                    x.className += " ej-hide";
+                                    x.previousElementSibling.className =
+                                        x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                } else {
+                                    x.className = x.className.replace(" ej-hide", "");
+                                    x.previousElementSibling.className += " ej-dark-grey";
+                                }
+                            }
+                        </script>
+                        <script>
+                            function myAccFunction(id) {
+                                var x = document.getElementById(id);
+                                if (x.className.indexOf("ej-show") == -1) {
+                                    x.className += " ej-show";
+                                    x.previousElementSibling.className += " ej-dark-grey";
+                                } else {
+                                    x.className = x.className.replace(" ej-show", "");
+                                    x.previousElementSibling.className =
+                                        x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                }
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<!-- Check Exercises Answers -->
+<script src="../js/ej-checkExercise.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

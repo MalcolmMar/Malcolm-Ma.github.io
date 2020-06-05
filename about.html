@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Iconfont CSS-->
+    <link href="css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="css/flexslider.css">
+
+    <!-- Pricing -->
+    <link rel="stylesheet" href="css/pricing.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="index.html">Home</a></li>
+                            <li class="has-dropdown">
+                                <a class='menu-a' href="courses/courses.html">Courses</a>
+                                <ul class="dropdown">
+                                    <li class="subnav"><a href="courses/courses.html">Java Tutorial</a></li>
+                                    <li class="subnav"><a href="courses/java_methods.html">Java Methods</a></li>
+                                    <li class="subnav"><a href="courses/java_oop.html">Java Classes</a></li>
+                                    <li class="subnav"><a href="courses/java_files.html">Java File Handling</a></li>
+                                    <li class="subnav"><a href="courses/java_howto_add_two_numbers.html">Java How To</a></li>
+                                    <li class="subnav"><a href="courses/java_ref_keywords.html">Java Reference</a></li>
+                                    <li class="subnav"><a href="courses/java_examples.html">Java Examples</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a class='menu-a' href="about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-top: 84px">
+        <aside id="fh5co-hero">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li style="background-image: url(images/img_bg_4.jpg);">
+                        <div class="overlay-gradient"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                    <div class="slider-text-inner">
+                                        <h1 class="heading-section" style="margin-top: 20px">About Us</h1>
+                                        <h2>Epiphany Java is developed by <a>Group 08</a><br>
+                                            From <a>Interactive Media Design and Production 2020</a></h2>
+                                        <video
+                                                class="col-md-12"
+                                                style="margin-bottom: 20px"
+                                                src="media/video_demo.mp4"
+                                                controls="controls"
+                                                preload="auto"
+                                        ></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <div id="fh5co-about">
+            <div class="container">
+                <div class="col-md-6 animate-box">
+                    <span>About Epiphany</span>
+                    <h2>We want more students learn java easier</h2>
+                    <p>
+                        Epiphany aims to provide simple and complete tutorials for Java users and is committed to promoting
+                        various programming language technologies. All the resources here are completely free.
+                    </p>
+                    <p>
+                        At the same time, if there are inadequacies or errors in the content of the website,
+                        we also welcome everyone to leave a message and provide comments.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="images/img_bg_2.jpg" alt="Free HTML5 Bootstrap Template">
+                </div>
+            </div>
+        </div>
+
+        <div id="fh5co-course-categories">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                        <h2>Course categories</h2>
+                        <p>We hope to bring you a brand new Java programming language experience and let you fall in
+                            love
+                            with
+                            programming from now on.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/courses.html">
+              <span class="icon">
+                <i class="icon-codepen"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/courses.html">Java Tutorial</a></h3>
+                                <p>Java is a programming language. Java is used to develop mobile apps, web apps,
+                                    desktop
+                                    apps, games
+                                    and much more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_methods.html">
+              <span class="icon">
+                  <i class="icon-coffee"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_methods.html">Java Methods</a></h3>
+                                <p>A method is a block of code which only runs when it is called.
+                                    You can pass data, known as parameters, into a method.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_oop.html">
+              <span class="icon">
+                  <i class="icon-code-outline"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_oop.html">Java Classes</a></h3>
+                                <p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_files.html">
+              <span class="icon">
+                  <i class="icon-file"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_files.html">Java File Handling</a></h3>
+                                <p>The Java file class represents file names and directory path names in an abstract
+                                    manner.
+                                    This class is mainly used for file and directory creation, file search and file
+                                    deletion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_howto_add_two_numbers.html">
+              <span class="icon">
+                  <i class="icon-marquee"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_howto_add_two_numbers.html">Java How To</a></h3>
+                                <p>Learn how to add two numbers in Java. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_ref_keywords.html">
+              <span class="icon">
+                  <i class="icon-world"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_ref_keywords.html">Java Reference</a></h3>
+                                <p>Java has a set of keywords that are reserved words that cannot be used as variables,
+                                    methods, classes,
+                                    or any other identifiers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_syntax.html">
+              <span class="icon">
+                  <i class="icon-bubble3"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_examples.html">Java Basis</a></h3>
+                                <p>Learning Java basic syntax to write code excellent. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center animate-box">
+                        <div class="services">
+                            <a href="courses/java_quiz.html">
+              <span class="icon">
+                  <i class="icon-printer3"></i>
+              </span>
+                            </a>
+                            <div class="desc">
+                                <h3><a href="courses/java_quiz.html">Java Quiz</a></h3>
+                                <p>You can test your Java skills with Epiphany's Quiz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-11 col-md-offset-1 fh5co-widget">
+                        <h3>About Java</h3>
+                        <p>&emsp;&emsp;Java is a general-purpose programming language that is class-based, object-oriented,
+                            and designed to have as few implementation dependencies as possible.</p>
+                    </div>
+                </div>
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">Copyright &copy; 2020 Media2020Gp08. All Rights Reserved.</small>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+<!--  EJ -->
+<script src="js/ej-response.js"></script>
+<script src="js/ej-search.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

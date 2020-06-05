@@ -1,0 +1,72 @@
+{
+  "id": "1798835",
+  "name": "IMD-CW",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2412124",
+      "name": "日间模式",
+      "font_class": "rijianmoshi",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "5835480",
+      "name": "夜间模式",
+      "font_class": "yejianmoshi",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "479600",
+      "name": "class",
+      "font_class": "icon",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1227889",
+      "name": "file",
+      "font_class": "file1",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "3404285",
+      "name": "code",
+      "font_class": "code",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "9676459",
+      "name": "reference",
+      "font_class": "reference",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "9833947",
+      "name": "formula",
+      "font_class": "formula1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "10067581",
+      "name": "method",
+      "font_class": "method",
+      "unicode": "e7b7",
+      "unicode_decimal": 59319
+    },
+    {
+      "icon_id": "5604188",
+      "name": "tutorial",
+      "font_class": "tutorial",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

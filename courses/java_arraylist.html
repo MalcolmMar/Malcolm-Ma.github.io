@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="#">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                class="iconfont dark-mode">&#xe6c7</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+                                <h1>Java <span class="color_h1">ArrayList</span></h1>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_date.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_hashmap.html">Next ❯</a>
+                                </div>
+                                <hr>
+
+                                <h2>Java ArrayList</h2>
+                                <p>The <code class="ej-codespan">ArrayList</code> class is a resizable <a href="java_arrays.html">array</a>, which can be found in the <code class="ej-codespan">java.util</code> package.</p>
+                                <p>The difference between a built-in array and an <code class="ej-codespan">ArrayList</code> in Java, is that the size of an array cannot be modified (if you want to
+                                    add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an <code class="ej-codespan">ArrayList</code> whenever you want. The syntax is also slightly different:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Create an <code class="ej-codespan">ArrayList</code> object called <strong>cars</strong> that will store strings:</p>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span> <span class="token comment">// import the ArrayList class</span>
+
+<span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> cars <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Create an ArrayList object</span>
+</code></pre>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>If you don't know what a package is, read our <a href="java_packages.html">Java Packages Tutorial</a>.</p>
+                                </div>
+
+                                <hr>
+
+                                <h2>Add Items</h2>
+                                <p>The <code class="ej-codespan">ArrayList</code> class has many useful methods. For example, to add elements to the <code class="ej-codespan">ArrayList</code>, use the <code class="ej-codespan">add()</code> method:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> cars <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Volvo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"BMW"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Ford"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Mazda"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>cars<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Access an Item</h2>
+                                <p>To access an element in the <code class="ej-codespan">ArrayList</code>, use the <code class="ej-codespan">get()</code> method and refer to the index number:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java">cars<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <div class="ej-note ej-panel">
+                                    <p><strong>Remember:</strong> Array indexes start with 0: [0] is the first element. [1] is the second
+                                        element, etc.</p>
+                                </div>
+                                <hr>
+
+                                <h2>Change an Item</h2>
+
+                                <p>To modify an element, use the <code class="ej-codespan">set()</code> method
+                                    and refer to the index number:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java">cars<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"Opel"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Remove an Item</h2>
+
+                                <p>To remove an element, use the <code class="ej-codespan">remove()</code> method
+                                    and refer to the index number:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java">cars<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <p>To remove all the elements in the <code class="ej-codespan">ArrayList</code>, use the <code class="ej-codespan">clear()</code> method:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java">cars<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <hr>
+
+                                <h2>ArrayList Size</h2>
+                                <p>To find out how many elements an ArrayList have, use the <code class="ej-codespan">size</code> method:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java">cars<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Loop Through an ArrayList</h2>
+                                <p>Loop through the elements of an <code class="ej-codespan">ArrayList</code> with a <code class="ej-codespan">for</code> loop, and use the <code class="ej-codespan">
+                                    size()</code> method to specify how many times the loop should run:</p>
+
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> cars <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Volvo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"BMW"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Ford"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Mazda"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> cars<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>cars<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+                                <p>You can also loop through an <code class="ej-codespan">ArrayList</code> with the <strong>for-each</strong> loop:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> cars <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Volvo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"BMW"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Ford"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Mazda"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token class-name">String</span> i <span class="token operator">:</span> cars<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Other Types</h2>
+                                <p>Elements in an ArrayList are actually objects. In the examples above, we created elements
+                                    (objects) of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent <a href="java_wrapper_classes.html">wrapper class</a>: <code class="ej-codespan">Integer</code>. For other primitive types,
+                                    use: <code class="ej-codespan">Boolean</code> for boolean, <code class="ej-codespan">Character</code> for char, <code class="ej-codespan">Double</code> for double,
+                                    etc:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Create an <code class="ej-codespan">ArrayList</code> to store numbers (add elements of type <code class="ej-codespan">Integer</code>):</p>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> myNumbers <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">:</span> myNumbers<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Sort an ArrayList</h2>
+                                <p>Another useful class in the <code class="ej-codespan">java.util</code> package is the <code class="ej-codespan">Collections</code> class, which include the <code class="ej-codespan">sort()</code> method for sorting lists
+                                    alphabetically or numerically:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Sort an ArrayList of Strings:</p>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Collections</span><span class="token punctuation">;</span>  <span class="token comment">// Import the Collections class</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> cars <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Volvo"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"BMW"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Ford"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cars<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"Mazda"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>cars<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Sort cars</span>
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token class-name">String</span> i <span class="token operator">:</span> cars<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Sort an ArrayList of Integers:</p>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-import">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util</span><span class="token punctuation">.</span><span class="token class-name">Collections</span><span class="token punctuation">;</span>  <span class="token comment">// Import the Collections class</span>
+
+<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> myNumbers <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">33</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">34</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    myNumbers<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>myNumbers<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// Sort myNumbers</span>
+
+    <span class="token keyword keyword-for">for</span> <span class="token punctuation">(</span><span class="token keyword keyword-int">int</span> i <span class="token operator">:</span> myNumbers<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+
+                                <hr>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_date.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_hashmap.html">Next ❯</a>
+                                </div>
+                            </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<script src="../js/ej-response.js"></script>
+<script src="../js/ej-search.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

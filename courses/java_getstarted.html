@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="#">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+
+                                <h1>Java <span class = "color_h1">Getting Started</span></h1>
+                                <div class="ej-clear nextprev">
+
+                                    <a class="ej-left ej-btn" href="java_intro.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_syntax.html">Next ❯</a>
+
+                                </div>
+                                <hr>
+                                <div class="pdf-show">
+                                    <video
+                                            class="col-md-12"
+                                            style="margin-bottom: 20px"
+                                            src="../media/video_demo.mp4"
+                                            controls="controls"
+                                            preload="auto"
+                                    ></video>
+                                </div>
+                                <hr>
+                                <h2>Java Install</h2>
+                                <p>Some PCs might have Java already installed.</p>
+                                <p>To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
+                                <div class="ej-example">
+                                    <div class="ej-code notranslate ej-black">
+                                        C:\Users\<em>Your Name</em>&gt;java -version
+                                    </div>
+                                </div>
+                                <p>If Java is installed, you will see something like this (depending on version):</p>
+                                <div class="ej-example ej-padding-16">
+                                    <div class="notranslate ej-black ej-padding">
+                                        <code>
+                                            java version "11.0.1" 2018-10-16 LTS<br>
+                                            Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br>
+                                            Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                                        </code>
+                                    </div>
+                                </div>
+                                <p>If you do not have Java installed on your computer, you can download it for free from <a href="https://www.oracle.com/technetwork/java/javase/overview/index.html" target="_blank">oracle.com</a>.</p>
+                                <p><strong>Note:</strong> In this tutorial, we will write Java code in a text editor. However, it is possible to write Java in an Integrated Development Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.</p>
+                                <hr>
+                                <h2>Setup for Windows</h2>
+                                <p>To install Java on Windows:</p>
+                                <ol>
+                                    <li>Go to "System Properties" (Can be found on Control Panel &gt;
+                                        System and Security &gt; System &gt; Advanced System Settings)</li>
+                                    <li>Click on the "Environment variables" button under the "Advanced" tab</li>
+                                    <li>Then, select the "Path" variable in System variables and click on the "Edit"
+                                        button</li>
+                                    <li>Click on the "New" button and add the path where Java is installed,
+                                        followed by <strong>\bin</strong>. By default, Java is installed in C:\Program
+                                        Files\Java\jdk-11.0.1 (If nothing else was specified when you installed it).
+                                        In that case, You will have to add a new path with: <strong>C:\Program
+                                            Files\Java\jdk-11.0.1\bin </strong><br>
+                                        Then, click "OK", and save the settings</li>
+                                    <li>At last, open Command Prompt (cmd.exe) and type <strong>java -version</strong> to see if Java is
+                                        running on your machine</li>
+                                </ol>
+                                <button onclick="myAccFunction('DemoAcc')" class="ej-btn ej-block ej-left-align xx ej-border-bottom">Show how to install Java step-by-step with images »</button>
+                                <div id="DemoAcc" class="ej-hide ej-light-grey ej-padding-16 ej-container">
+                                    <h2 style="margin-top:0">Step 1</h2>
+                                    <img src="system.png" class="w3-image">
+                                </div>
+                                <button onclick="myAccFunction('DemoAcc2')" class="ej-btn ej-block ej-left-align xx ej-border-bottom ">Step 2 »</button>
+                                <div id="DemoAcc2" class="ej-hide ej-light-grey ej-padding-16 ej-container">
+                                    <h2 style="margin-top:0">Step 2</h2>
+                                    <img src="system1.png" class="w3-image">
+                                </div>
+                                <button onclick="myAccFunction('DemoAcc3')" class="ej-btn ej-block ej-left-align xx ej-border-bottom">Step 3 »</button>
+                                <div id="DemoAcc3" class="ej-hide ej-light-grey ej-padding-16 ej-container">
+                                    <h2 style="margin-top:0">Step 3</h2>
+                                    <img src="path2.png" class="w3-image">
+                                </div>
+                                <button onclick="myAccFunction('DemoAcc4')" class="ej-btn ej-block ej-left-align xx ej-border-bottom">Step 4 »</button>
+                                <div id="DemoAcc4" class="ej-hide ej-light-grey ej-padding-16 ej-container">
+
+                                    <h2 style="margin-top:0">Step 4</h2>
+                                    <img src="path3.png" class="w3-image">
+                                </div>
+                                <button onclick="myAccFunction('DemoAcc5')" class="ej-btn ej-block ej-left-align xx ej-border-bottom">Step 5 »</button>
+                                <div id="DemoAcc5" class="ej-hide ej-light-grey ej-padding-16 ej-container">
+
+                                    <h2 style="margin-top:0">Step 5</h2>
+                                    <p>Write the following in the command line (cmd.exe):</p>
+                                    <div class="w3-code notranslate w3-black">
+                                        C:\Users\<em>Your Name</em>&gt;java -version
+                                    </div>
+                                    <p>If Java was successfully installed, you will see something like this (depending on version):</p>
+                                    <div class="w3-code notranslate w3-black">
+                                        java version "11.0.1" 2018-10-16 LTS<br>
+                                        Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)<br>
+                                        Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                                    <!-- MidContent -->
+
+                                    <!--<pre>mid_content, all: [300,250][336,280][728,90][970,250][970,90][320,50][468,60]</pre>-->
+                                    <div id="snhb-mid_content-0"></div>
+
+                                </div>
+                                <h2>Java Quickstart</h2>
+                                <p>In Java, every application begins with a class name, and that class must match the filename.</p>
+                                <p>Let's create our first Java file, called MyClass.java, which can be done in any text editor
+                                    (like Notepad).</p>
+                                <p>The file should contain a "Hello World" message, which is written with the
+                                    following code:</p>
+                                <div class="ej-example">
+                                    <p>MyClass.java</p>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                </div>
+                                <p>This will compile your code. If there are no errors in the code, the command prompt will take you to the next line.
+                                    Now, type "java MyClass" to run the file:</p>
+                                <div class="ej-example">
+                                    <div class="ej-code notranslate ej-black">
+                                        C:\Users\<em>Your Name</em>&gt;java MyClass
+                                    </div>
+                                </div>
+                                <p>The output should read:</p>
+                                <div class="ej-example ej-padding-16">
+                                    <div class="notranslate ej-black ej-padding">
+                                        <code class="notranslate">
+                                            Hello World
+                                        </code>
+                                    </div>
+                                </div>
+                                <p><strong>Congratulations!</strong> You have written and executed your first Java program.</p>
+                                <hr>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_intro.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_syntax.html">Next ❯</a>
+                                </div>
+                                </div>
+
+                                <script>
+                                    function myAccFunction1(id) {
+                                        var x = document.getElementById(id);
+                                        if (x.className.indexOf("ej-hide") == -1) {
+                                            x.className += " ej-hide";
+                                            x.previousElementSibling.className =
+                                                x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                        } else {
+                                            x.className = x.className.replace(" ej-hide", "");
+                                            x.previousElementSibling.className += " ej-dark-grey";
+                                        }
+                                    }
+                                </script>
+                                <script>
+                                    function myAccFunction(id) {
+                                        var x = document.getElementById(id);
+                                        if (x.className.indexOf("ej-show") == -1) {
+                                            x.className += " ej-show";
+                                            x.previousElementSibling.className += " ej-dark-grey";
+                                        } else {
+                                            x.className = x.className.replace(" ej-show", "");
+                                            x.previousElementSibling.className =
+                                                x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                        }
+                                    }
+                                </script>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<script src="../js/ej-response.js"></script>
+<script src="../js/ej-search.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

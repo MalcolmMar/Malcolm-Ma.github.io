@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java.</a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..." list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="courses.html">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i class="iconfont dark-mode">&#xe6c7</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+
+                                <h1 >Java <span class = "color_h1">Methods</span></h1>
+                                <div class="ej-clear nextprev">
+
+                                    <a class="ej-left ej-btn" href="java_arrays.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_method_parameters.html">Next ❯</a>
+
+                                </div>
+                                <hr>
+                                <p class="intro">A <strong>method</strong> is a block of code which only runs when it is called.</p>
+                                <p class="intro">You can pass data, known as parameters, into a method.</p>
+                                <p class="intro">Methods are used to perform certain actions, and they are also known as <strong>functions</strong>.</p>
+                                <p class="intro">Why use methods? To reuse code: define the code once, and use
+                                    it many times.</p>
+                                <hr>
+                                <h3>Video for this section</h3>
+                                <div class="pdf-show">
+                                    <video
+                                            class="col-md-12"
+                                            style="margin-bottom: 20px"
+                                            src="../media/video_demo.mp4"
+                                            controls="controls"
+                                            preload="auto"
+                                    ></video>
+                                </div>
+                                <hr>
+                                <h2>Create a Method</h2>
+                                <p>A method must be declared within a class. It is defined
+                                    with the name of the method, followed by parentheses <strong>()</strong>. Java provides some pre-defined methods, such as <code class="ej-codespan">System.out.println()</code>, but you can also create your own methods to perform certain actions:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Create a method inside MyClass:</p>
+                                    <pre class=" ej-white language-java" data-line="2"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// code to be executed</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<div aria-hidden="true" data-range="2" class=" line-highlight" data-start="2" style="top: 22px;">
+</div></code></pre>
+                                </div>
+                                <h4>Example Explained</h4>
+                                <ul>
+                                    <li><code class="ej-codespan">myMethod()</code> is the name of the method</li>
+                                    <li><code class="ej-codespan">static</code> means that the method belongs to the
+                                        MyClass class and not an object of the MyClass class. You will learn more about objects and how to access methods through objects later in this tutorial.</li>
+                                    <li><code class="ej-codespan">void</code> means that this method does not have a
+                                        return value. You will learn more about return values later in this chapter</li>
+                                </ul>
+                                <hr>
+                                <h2>Call a Method</h2>
+                                <p>To call a method in Java, write the method's name followed by two
+                                    parentheses <strong>()</strong> and a semicolon<strong>;</strong></p>
+                                <p>In the following example, <code class="ej-codespan">myMethod()</code> is used to print a text (the action), when it is called:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Inside <code class="ej-codespan">main</code>, call the <code class="ej-codespan">
+                                        myMethod()</code> method:</p>
+                                    <pre class=" ej-white language-java" data-line="7"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I just got executed!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Outputs "I just got executed!"</span>
+<div aria-hidden="true" data-range="7" class=" line-highlight" data-start="7" style="top: 132px;">
+</div></code></pre>
+                                </div>
+                                <p>A method can also be called multiple times:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java" data-line="7,8,9"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I just got executed!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// I just got executed!</span>
+<span class="token comment">// I just got executed!</span>
+<span class="token comment">// I just got executed!</span>
+<div aria-hidden="true" data-range="7" class=" line-highlight" data-start="7" style="top: 132px;">
+</div><div aria-hidden="true" data-range="8" class=" line-highlight" data-start="8" style="top: 154px;">
+</div><div aria-hidden="true" data-range="9" class=" line-highlight" data-start="9" style="top: 176px;">
+</div></code></pre>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>In the next chapter, <a href="java_methods_param.html">Method Parameters</a>, you will learn how to pass data (parameters) into a method.</p>
+                                </div>
+                                <hr>
+                                <div>
+                                    <form autocomplete="off" spellcheck="false" id="ej-exerciseform" action="exercise.html?filename=exercise_methods1" method="post" target="_blank">
+                                        <h2>Test Yourself With Exercises</h2>
+                                        <div class="exercisewindow">
+                                            <h3>Exercise:</h3>
+                                            <p>Insert the missing part to call <code class="ej-codespan">myMethod</code> from <code class="w3-codespan">main</code>.</p>
+                                            <div class="exerciseprecontainer">
+<pre style="overflow: auto;">static void myMethod() {
+  System.out.println("I just got executed!");
+}
+
+public static void main(String[] args) {
+  <input name="ex1" maxlength="10" style="width: 105px;">;
+}
+</pre>
+                                            </div>
+                                            <br>
+                                            <a class="ej-btn" href="javascript:void(0);" onclick="checkAns(['myMethod()'])">Submit Answer »</a>
+                                            <a class="ej-btn" id="ansBtn" href="javascript:void(0);" onclick="showAns(['myMethod()'])">Show Answer »</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="ej-clear nextprev">
+
+                                    <a class="ej-left ej-btn" href="java_arrays.html">❮ Previous</a>
+
+                                    <a class="ej-right ej-btn" href="java_method_parameters.html">Next ❯</a>
+
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+
+                        <script>
+                            function myAccFunction1(id) {
+                                var x = document.getElementById(id);
+                                if (x.className.indexOf("ej-hide") == -1) {
+                                    x.className += " ej-hide";
+                                    x.previousElementSibling.className =
+                                        x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                } else {
+                                    x.className = x.className.replace(" ej-hide", "");
+                                    x.previousElementSibling.className += " ej-dark-grey";
+                                }
+                            }
+                        </script>
+                        <script>
+                            function myAccFunction(id) {
+                                var x = document.getElementById(id);
+                                if (x.className.indexOf("ej-show") == -1) {
+                                    x.className += " ej-show";
+                                    x.previousElementSibling.className += " ej-dark-grey";
+                                } else {
+                                    x.className = x.className.replace(" ej-show", "");
+                                    x.previousElementSibling.className =
+                                        x.previousElementSibling.className.replace("ej-dark-grey", "");
+                                }
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<script src="../js/ej-response.js"></script>
+<script src="../js/ej-search.js"></script>
+<!-- Check Exercises Answers -->
+<script src="../js/ej-checkExercise.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

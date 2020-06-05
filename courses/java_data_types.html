@@ -1,0 +1,648 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="#">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+                                <h1>Java <span class="color_h1">Data Types</span></h1>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_variables.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_type_casting.html">Next ❯</a>
+                                </div>
+                                <hr>
+                                <h2>Java Data Types</h2>
+                                <p>As explained in the previous chapter, a variable in Java must be a specified data type:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-int">int</span> myNum <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>               <span class="token comment">// Integer (whole number)</span>
+<span class="token keyword keyword-float">float</span> myFloatNum <span class="token operator">=</span> <span class="token number">5.99f</span><span class="token punctuation">;</span>    <span class="token comment">// Floating point number</span>
+<span class="token keyword keyword-char">char</span> myLetter <span class="token operator">=</span> <span class="token string">'D'</span><span class="token punctuation">;</span>         <span class="token comment">// Character</span>
+<span class="token keyword keyword-boolean">boolean</span> myBool <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>       <span class="token comment">// Boolean</span>
+<span class="token class-name">String</span> myText <span class="token operator">=</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span>     <span class="token comment">// String</span>
+</code></pre>
+                                </div>
+
+                                <p>Data types are divided into two groups:</p>
+
+                                <ul>
+                                    <li>Primitive data types - includes <code class="ej-codespan">byte</code>, <code class="ej-codespan">short</code>, <code class="ej-codespan">int</code>, <code class="ej-codespan">long</code>,
+                                        <code class="ej-codespan">float</code>, <code class="ej-codespan">double</code>, <code class="ej-codespan">boolean</code> and <code class="ej-codespan">char</code></li>
+                                    <li>Non-primitive data types - such as <a href="java_strings.html">String</a>, <a href="java_arrays.html">Arrays</a> and  <a href="java_classes.html">Classes</a> (you will learn more about these in a later chapter)</li>
+                                </ul>
+
+                                <hr>
+
+                                <h2>Primitive Data Types</h2>
+                                <p>A primitive data type specifies the size and type of variable values, and it has no
+                                    additional methods.</p>
+                                <p>There are eight primitive data types in Java:</p>
+
+                                <div class="ej-responsive">
+                                    <table class="ej-table-all notranslate">
+                                        <tbody><tr>
+                                            <th style="width:20%">Data Type</th>
+                                            <th style="width:17%">Size</th>
+                                            <th style="width:63%">Description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>byte</td>
+                                            <td>1 byte</td>
+                                            <td>Stores whole numbers from -128 to 127</td>
+                                        </tr>
+                                        <tr>
+                                            <td>short</td>
+                                            <td>2 bytes</td>
+                                            <td>Stores whole numbers from -32,768 to 32,767</td>
+                                        </tr>
+                                        <tr>
+                                            <td>int</td>
+                                            <td>4 bytes</td>
+                                            <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+                                        </tr>
+                                        <tr>
+                                            <td>long</td>
+                                            <td>8 bytes</td>
+                                            <td>Stores whole numbers from -9,223,372,036,854,775,808 to
+                                                9,223,372,036,854,775,807</td>
+                                        </tr>
+                                        <tr>
+                                            <td>float</td>
+                                            <td>4 bytes</td>
+                                            <td>Stores fractional numbers. Sufficient for
+                                                storing 6 to 7 decimal digits</td>
+                                        </tr>
+                                        <tr>
+                                            <td>double</td>
+                                            <td>8 bytes</td>
+                                            <td>Stores fractional numbers. Sufficient for
+                                                storing 15 decimal digits</td>
+                                        </tr>
+                                        <tr>
+                                            <td>boolean</td>
+                                            <td>1 bit</td>
+                                            <td>Stores true or false values</td>
+                                        </tr>
+                                        <tr>
+                                            <td>char</td>
+                                            <td>2 bytes</td>
+                                            <td>Stores a single character/letter or ASCII values</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr>
+                                <h2>Numbers</h2>
+                                <p>Primitive number types are divided into two groups:</p>
+                                <p><strong>Integer types</strong> stores whole numbers, positive or negative (such as 123 or -456), without decimals.
+                                    Valid types are <code class="ej-codespan">byte</code>, <code class="ej-codespan">short</code>, <code class="ej-codespan">int</code>
+                                    and <code class="ej-codespan">long</code>. Which type you should use, depends on the numeric value.</p>
+                                <p><strong>Floating point types</strong> represents numbers with a fractional part,
+                                    containing one or more decimals. There are two types: <code class="ej-codespan">float</code> and <code class="ej-codespan">double</code>.</p>
+                                <div class="ej-note ej-panel">
+                                    <p>Even though there are many numeric types in Java, the most used for numbers
+                                        are <code class="ej-codespan">int</code> (for whole numbers) and <code class="ej-codespan">double</code> (for floating point numbers). However, we will describe them all as you continue to
+                                        read.</p>
+                                </div>
+                                <hr>
+                                <h2>Integer Types</h2>
+
+                                <h3>Byte</h3>
+                                <p>The <code class="ej-codespan">byte</code> data type can store whole numbers
+                                    from -128 to 127. This can be used instead of <code class="ej-codespan">int</code> or other integer types to
+                                    save memory when you are certain that the value will be within -128 and 127:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-byte">byte</span> myNum <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <h3>Short</h3>
+                                <p>The <code class="ej-codespan">short</code> data type can store whole numbers from -32768 to 32767:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-short">short</span> myNum <span class="token operator">=</span> <span class="token number">5000</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <h3>Int</h3>
+                                <p>The <code class="ej-codespan">int</code> data type can store whole numbers from -2147483648 to 2147483647. <!-- This is used when short and byte is not large enough. --> In general, and in our tutorial, the <code class="ej-codespan">int</code> data type is
+                                    the preferred data type when we create variables with a numeric value.</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-int">int</span> myNum <span class="token operator">=</span> <span class="token number">100000</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <h3>Long</h3>
+                                <p>The <code class="ej-codespan">long</code> data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when int is not large enough to store the value. Note that you should end the value with an "L":</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-long">long</span> myNum <span class="token operator">=</span> <span class="token number">15000000000L</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Floating Point Types</h2>
+                                <p>You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.</p>
+                                <h3>Float</h3>
+                                <p>The <code class="ej-codespan">float</code> data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "f":</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-float">float</span> myNum <span class="token operator">=</span> <span class="token number">5.75f</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <h3>Double</h3>
+                                <p>The <code class="ej-codespan">double</code> data type can store fractional numbers from 1.7e−308 to 1.7e+308. Note that you should end the value with a "d":</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-double">double</span> myNum <span class="token operator">=</span> <span class="token number">19.99d</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myNum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+
+                                <div class="ej-note ej-panel">
+                                    <p>Use <code class="ej-codespan">float</code> or <code class="ej-codespan">double</code>?</p>
+                                    <p>The <strong>precision</strong> of a floating point value indicates how many digits the value can have
+                                        after the decimal point.
+                                        The precision of <code class="ej-codespan">float</code> is only six or seven
+                                        decimal digits, while <code class="ej-codespan">double</code> variables have a precision
+                                        of about 15 digits. Therefore it is safer to use <code class="ej-codespan">double</code> for most calculations.</p>
+                                </div>
+
+                                <h3>Scientific Numbers</h3>
+                                <p>A floating point number can also be a scientific number with an "e" to indicate the power of 10:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-float">float</span> f1 <span class="token operator">=</span> <span class="token number">35e3f</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-double">double</span> d1 <span class="token operator">=</span> <span class="token number">12E4d</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>f1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>d1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <hr>
+                                <h2>Booleans</h2>
+                                <p>A boolean data type is declared with the <code class="ej-codespan">boolean</code> keyword and can only take the values <code class="ej-codespan">true</code> or <code class="ej-codespan">false</code>:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-boolean">boolean</span> isJavaFun <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-boolean">boolean</span> isFishTasty <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>isJavaFun<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// Outputs true</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>isFishTasty<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// Outputs false</span>
+</code></pre>
+                                </div>
+                                <p>Boolean values are mostly used for conditional testing, which you will learn more about in a later chapter.</p>
+                                <hr>
+
+                                <h2>Characters</h2>
+                                <p>The <code class="ej-codespan">char</code> data type is used to store a
+                                    <strong>single</strong> character. The character must be
+                                    surrounded by single quotes, like 'A' or 'c':</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-char">char</span> myGrade <span class="token operator">=</span> <span class="token string">'B'</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myGrade<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <p>Alternatively, you can use ASCII values to display certain characters:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-char">char</span> a <span class="token operator">=</span> <span class="token number">65</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">66</span><span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">67</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <p><strong>Tip:</strong> A list of all ASCII values can be found in our <a target="_blank" href="https://www.ejschools.com/charsets/ref_html_ascii.html">ASCII Table Reference</a>.</p>
+                                <hr>
+
+                                <h2>Strings</h2>
+                                <p>The <code class="ej-codespan">String</code> data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class=" ej-white language-java"><code class=" language-java"><span class="token class-name">String</span> greeting <span class="token operator">=</span> <span class="token string">"Hello World"</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>greeting<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>The String type is so much used and integrated in Java, that some call it "the special
+                                        <strong>ninth</strong> type".</p>
+                                    <p>A String in Java is actually a <strong>non-primitive</strong> data type, because it refers to
+                                        an object. The String object has methods that are used to perform certain
+                                        operations on strings. <strong>Don't worry if you don't understand the term "object" just yet</strong>. We will learn more about strings and objects in a later chapter.</p>
+                                </div>
+                                <hr>
+
+                                <h2>Non-Primitive Data Types</h2>
+                                <p>Non-primitive data types are called <strong>reference types</strong> because
+                                    they refer to objects.</p>
+                                <p>The main difference between <strong>primitive</strong> and <strong>non-primitive</strong> data types are:</p>
+
+                                <ul>
+                                    <li>Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and
+                                        is not defined by Java (except for <code class="ej-codespan">String</code>).</li>
+                                    <li>Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.</li>
+                                    <li>A primitive type has always a value, while non-primitive types can be <code class="ej-codespan">null</code>.</li>
+                                    <li>A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.</li>
+                                    <li>The size of a primitive type depends on the data type, while non-primitive types have all the same size.</li>
+                                </ul>
+
+                                <p>Examples of non-primitive types are <a href="java_strings.html">Strings</a>, <a href="java_arrays.html">Arrays</a>, <a href="java_classes.html">Classes, </a><a href="java_interface.html">Interface</a>, etc. You will learn more about these in a later chapter.</p>
+                                <hr>
+
+                                <div>
+                                    <form autocomplete="off" spellcheck="false" id="ej-exerciseform" action="exercise.html?filename=exercise_data_types1" method="post" target="_blank">
+                                        <h2>Test Yourself With Exercises</h2>
+                                        <div class="exercisewindow">
+                                            <h2>Exercise:</h2>
+                                            <p>Add the correct data type for the following variables:</p>
+                                            <div class="exerciseprecontainer">
+<pre style="overflow: auto;"><input name="ex1" maxlength="3" style="width: 34px;"> myNum = 9;
+<input name="ex2" maxlength="5" style="width: 54px;"> myFloatNum = 8.99f;
+<input name="ex3" maxlength="4" style="width: 44px;"> myLetter = 'A';
+<input name="ex4" maxlength="7" style="width: 74px;"> myBool = false;
+<input name="ex5" maxlength="6" style="width: 64px;"> myText = "Hello World";
+</pre>
+                                            </div>
+                                            <br>
+                                            <a class="ej-btn" href="javascript:void(0);" onclick="checkAns(['int','float','char','boolean','String'])">Submit Answer »</a>
+                                            <a class="ej-btn" id="ansBtn" href="javascript:void(0);" onclick="showAns(['int','float','char','boolean','String'])">Show Answer »</a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <hr>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_variables.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_type_casting.html">Next ❯</a>
+                                </div>
+                            </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<!-- Check Exercises Answers -->
+<script src="../js/ej-checkExercise.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,240 @@
+[
+  {
+    "question": "What is a correct syntax to output \"Hello World\" in Java?",
+    "correct": "choice_4",
+    "choices": {
+      "choice_1": " Console.WriteLine(\"Hello World\");",
+      "choice_2": " print (\"Hello World\");",
+      "choice_3": " echo(\"Hello World\");",
+      "choice_4": " System.out.println(\"Hello World\");"
+    }
+  },
+  {
+    "question": "Java is short for \"JavaScript\".",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " False",
+      "choice_2": " True"
+    }
+  },
+  {
+    "question": "How do you insert COMMENTS in Java code?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " # This is a comment",
+      "choice_2": " // This is a comment",
+      "choice_3": " /* This is a comment"
+    }
+  },
+  {
+    "question": "Which data type is used to create a variable that should store text?",
+    "correct": "choice_3",
+    "choices": {
+      "choice_1": " string",
+      "choice_2": " Txt",
+      "choice_3": " String",
+      "choice_4": " myString"
+    }
+  },
+  {
+    "question": "How do you create a variable with the numeric value 5?",
+    "correct": "choice_4",
+    "choices": {
+      "choice_1": " x = 5;",
+      "choice_2": " float x = 5;",
+      "choice_3": " num x = 5;",
+      "choice_4": " int x = 5;"
+    }
+  },
+  {
+    "question": "How do you create a variable with the floating number 2.8?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " byte x = 2.8f",
+      "choice_2": " float x = 2.8f;",
+      "choice_3": " int x = 2.8f;",
+      "choice_4": " x = 2.8f;"
+    }
+  },
+  {
+    "question": "Which method can be used to find the length of a string?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " len()",
+      "choice_2": " length()",
+      "choice_3": " getSize()",
+      "choice_4": " getLength()"
+    }
+  },
+  {
+    "question": "Which operator is used to add together two values?",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " The + sign",
+      "choice_2": " The & sign",
+      "choice_3": " The * sign"
+    }
+  },
+  {
+    "question": "The value of a string variable can be surrounded by single quotes.",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " False",
+      "choice_2": " True"
+    }
+  },
+  {
+    "question": "Which method can be used to return a string in upper case letters?",
+    "correct": "choice_4",
+    "choices": {
+      "choice_1": " touppercase()",
+      "choice_2": " tuc()",
+      "choice_3": " upperCase()",
+      "choice_4": " toUpperCase()"
+    }
+  },
+  {
+    "question": "Which operator can be used to compare two values?",
+    "correct": "choice_3",
+    "choices": {
+      "choice_1": " =",
+      "choice_2": " <>",
+      "choice_3": " ==",
+      "choice_4": " ><"
+    }
+  },
+  {
+    "question": "To declare an array in Java, define the variable type with:",
+    "correct": "choice_3",
+    "choices": {
+      "choice_1": " {}",
+      "choice_2": " ()",
+      "choice_3": " []"
+    }
+  },
+  {
+    "question": "Array indexes start with:",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " 0",
+      "choice_2": " 1"
+    }
+  },
+  {
+    "question": "How do you create a method in Java?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " (methodName)",
+      "choice_2": " methodName()",
+      "choice_3": " methodName.",
+      "choice_4": " methodName[]"
+    }
+  },
+  {
+    "question": "How do you call a method in Java?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " (methodName)",
+      "choice_2": " methodName()",
+      "choice_3": " methodName;",
+      "choice_4": " methodName[]"
+    }
+  },
+  {
+    "question": "Which keyword is used to create a class in Java?",
+    "correct": "choice_4",
+    "choices": {
+      "choice_1": " className",
+      "choice_2": " myClass",
+      "choice_3": " class()",
+      "choice_4": " class"
+    }
+  },
+  {
+    "question": "What is the correct way to create an object called myObj of MyClass?",
+    "correct": "choice_3",
+    "choices": {
+      "choice_1": " class myObj = new MyClass();",
+      "choice_2": " new myObj = MyClass();",
+      "choice_3": " MyClass myObj = new MyClass();;",
+      "choice_4": " class MyClass = new myObj();"
+    }
+  },
+  {
+    "question": "In Java, it is possible to inherit attributes and methods from one class to another.",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " False",
+      "choice_2": " True"
+    }
+  },
+  {
+    "question": "Which method can be used to find the highest value of x and y?",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " Math.max(x,y)",
+      "choice_2": " Math.maximum(x,y)",
+      "choice_3": " Math.maxNum(x,y)",
+      "choice_4": " Math.largest(x,y)"
+    }
+  },
+  {
+    "question": "Which operator is used to multiply numbers?",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " *",
+      "choice_2": " %",
+      "choice_3": " x",
+      "choice_4": " #"
+    }
+  },
+  {
+    "question": "Which keyword is used to import a package from the Java API library?",
+    "correct": "choice_4",
+    "choices": {
+      "choice_1": " getlib",
+      "choice_2": " lib",
+      "choice_3": " package",
+      "choice_4": " import"
+    }
+  },
+  {
+    "question": "How do you start writing an if statement in Java?",
+    "correct": "choice_2",
+    "choices": {
+      "choice_1": " if x > y then:",
+      "choice_2": " if (x > y)",
+      "choice_3": " if x > y:"
+    }
+  },
+  {
+    "question": "How do you start writing a while loop in Java?",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " while (x > y)",
+      "choice_2": " while x > y {",
+      "choice_3": " while x > y:",
+      "choice_4": " x > y while {"
+    }
+  },
+  {
+    "question": "Which keyword is used to return a value inside a method?",
+    "correct": "choice_3",
+    "choices": {
+      "choice_1": " void",
+      "choice_2": " get",
+      "choice_3": " return",
+      "choice_4": " break"
+    }
+  },
+  {
+    "question": "Which statement is used to stop a loop?",
+    "correct": "choice_1",
+    "choices": {
+      "choice_1": " break",
+      "choice_2": " stop",
+      "choice_3": " return",
+      "choice_4": " exit"
+    }
+  }
+]

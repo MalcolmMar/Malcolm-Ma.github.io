@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java.</a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="courses.html">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                    id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="java_encapsulation.html">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="java_packages.html">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="java_inheritance.html">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="java_polymorphism.html">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="java_inner_classes.html">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="java_abstract.html">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="java_interface.html">Interface</a>
+                            </li>
+                            <li>
+                                <a href="java_enums.html">Enums</a>
+                            </li>
+                            <li>
+                                <a href="java_user_input.html">User Input</a>
+                            </li>
+                            <li>
+                                <a href="java_date.html">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+
+                                <div>
+
+                                    <h1>Java <span class="color_h1">Wrapper Classes</span></h1>
+                                    <div class="ej-clear nextprev">
+                                        <a class="ej-left ej-btn" href="java_hashmap.html">❮ Previous</a>
+                                        <a class="ej-right ej-btn" href="java_try_catch.html">Next ❯</a>
+                                    </div>
+                                    <hr>
+
+                                    <h2>Java Wrapper Classes</h2>
+                                    <p>Wrapper classes provide a way to use primitive data types (<code class="ej-codespan">int</code>, <code class="ej-codespan">boolean</code>,
+                                        etc..) as objects.</p>
+                                    <p>The table below shows the primitive type and the equivalent wrapper class:</p>
+                                    <table class="ej-table-all notranslate">
+                                        <tbody><tr>
+                                            <th style="width:50%">Primitive Data Type</th>
+                                            <th>Wrapper Class</th>
+                                        </tr>
+                                        <tr>
+                                            <td>byte</td>
+                                            <td>Byte</td>
+                                        </tr>
+                                        <tr>
+                                            <td>short</td>
+                                            <td>Short</td>
+                                        </tr>
+                                        <tr>
+                                            <td>int</td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>long</td>
+                                            <td>Long</td>
+                                        </tr>
+                                        <tr>
+                                            <td>float</td>
+                                            <td>Float</td>
+                                        </tr>
+                                        <tr>
+                                            <td>double</td>
+                                            <td>Double</td>
+                                        </tr>
+                                        <tr>
+                                            <td>boolean</td>
+                                            <td>Boolean</td>
+                                        </tr>
+                                        <tr>
+                                            <td>char</td>
+                                            <td>Character</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <p>Sometimes you must use wrapper classes, for example when working with Collection objects, such
+                                        as <code class="ej-codespan">ArrayList</code>, where primitive types cannot be
+                                        used (the list can only store objects):</p>
+                                    <div class="ej-example">
+                                        <h3>Example</h3>
+                                        <pre class=" ej-white ej-border-red ej-pale-red language-java"><code class=" language-java"><span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">&gt;</span></span> myNumbers <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token keyword keyword-int">int</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Invalid</span>
+</code></pre>
+                                        <pre class=" ej-white language-java"><code class=" language-java"><span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span> myNumbers <span class="token operator">=</span> <span class="token keyword keyword-new">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Integer</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Valid</span>
+</code></pre>
+                                    </div>
+                                    <hr>
+                                    <h3>Video for this section</h3>
+                                    <div class="pdf-show">
+                                        <video
+                                                class="col-md-12"
+                                                style="margin-bottom: 20px"
+                                                src="../media/video_demo.mp4"
+                                                controls="controls"
+                                                preload="auto"
+                                        ></video>
+                                    </div>
+                                    <hr>
+                                    <h2>Creating Wrapper Objects</h2>
+                                    <p>To create a wrapper object, use the wrapper class instead of the primitive
+                                        type. To get the value, you can just print the object:</p>
+                                    <div class="ej-example">
+                                        <h3>Example</h3>
+                                        <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Integer</span> myInt <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token class-name">Double</span> myDouble <span class="token operator">=</span> <span class="token number">5.99</span><span class="token punctuation">;</span>
+    <span class="token class-name">Character</span> myChar <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myInt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myDouble<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myChar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                    </div>
+                                    <hr>
+
+                                    <p>Since you're now working with objects, you can use certain methods to get
+                                        information about the specific object.</p>
+                                    <p>For example, the following methods are used to get the value associated with
+                                        the corresponding wrapper object: <code class="ej-codespan">intValue()</code>, <code class="ej-codespan">byteValue()</code>, <code class="ej-codespan">shortValue()</code>, <code class="ej-codespan">longValue()</code>,
+                                        <code class="ej-codespan">floatValue()</code>, <code class="ej-codespan">doubleValue()</code>, <code class="ej-codespan">charValue()</code>, <code class="ej-codespan">
+                                            booleanValue()</code>.</p>
+                                    <p>This example will output the same result as the example above:</p>
+                                    <div class="ej-example">
+                                        <h3>Example</h3>
+                                        <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Integer</span> myInt <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    <span class="token class-name">Double</span> myDouble <span class="token operator">=</span> <span class="token number">5.99</span><span class="token punctuation">;</span>
+    <span class="token class-name">Character</span> myChar <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myInt<span class="token punctuation">.</span><span class="token function">intValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myDouble<span class="token punctuation">.</span><span class="token function">doubleValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myChar<span class="token punctuation">.</span><span class="token function">charValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                        
+                                    </div>
+
+                                    <p>Another useful method is the <code class="ej-codespan">toString()</code> method, which is used to convert wrapper objects to strings.</p>
+                                    <p>In the following example, we convert an <code class="ej-codespan">Integer</code> to a <code class="ej-codespan">String</code>, and use the <code class="ej-codespan">length()</code> method of the <code class="ej-codespan">String</code> class to output the length of the "string":</p>
+                                    <div class="ej-example">
+                                        <h3>Example</h3>
+                                        <pre class=" ej-white language-java"><code class=" language-java"><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span>
+  <span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Integer</span> myInt <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token class-name">String</span> myString <span class="token operator">=</span> myInt<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myString<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                                        
+                                    </div>
+
+                                    <br>
+                                    <div class="ej-clear nextprev">
+                                        <a class="ej-left ej-btn" href="java_hashmap.html">❮ Previous</a>
+                                        <a class="ej-right ej-btn" href="java_try_catch.html">Next ❯</a>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="../js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Flexslider -->
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <!-- countTo -->
+    <script src="../js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup-options.js"></script>
+    <!-- Count Down -->
+    <script src="../js/simplyCountup.js"></script>
+    <!-- Main -->
+    <script src="../js/main.js"></script>
+    <!--  EJ -->
+    <script src="../js/ej-response.js"></script>
+    <script src="../js/ej-search.js"></script>
+    <script>
+        var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+        // default example
+        simplyCountdown('.simply-countdown-one', {
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate()
+        });
+
+        //jQuery example
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate(),
+            enableUtc: false
+        });
+    </script>
+</body>
+</html>
+

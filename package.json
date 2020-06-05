@@ -1,0 +1,19 @@
+{
+  "name": "imd-coursework",
+  "version": "1.0.0",
+  "description": "The coursework of EBU6305 - INTERACTIVE MEDIA DESIGN AND PRODUCTION",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server --port=8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.mingzema.cn:interactive-media-design/imd-coursework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

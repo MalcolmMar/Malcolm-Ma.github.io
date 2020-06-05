@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+    <meta name="keywords"
+          content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+    <!-- Fontfaces CSS-->
+    <link href="../css/font-face.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Iconfont CSS-->
+    <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/theme.css">
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+    <nav class="fh5co-nav head-nav" role="navigation">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+                    <div class="col-xs-3 text-right menu-1">
+                        <ul>
+                            <li><a class='menu-a' href="../index.html">Home</a></li>
+                            <li class="active">
+                                <a class='menu-a' href="#">Courses</a>
+                            </li>
+                            <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="menu-sidebar d-none d-lg-block">
+        <div class="menu-sidebar__content js-scrollbar1">
+            <nav class="navbar-sidebar">
+                <ul class="list-unstyled navbar__list">
+                    <li class="active has-sub">
+                        <a class="js-arrow sidebar" href="#">
+                            <i class="iconfont">&#xe600</i>
+                            Java Tutorial</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="courses.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="java_intro.html">Intro</a>
+                            </li>
+                            <li>
+                                <a href="java_getstarted.html">Get Started</a>
+                            </li>
+                            <li>
+                                <a href="java_syntax.html">Syntax</a>
+                            </li>
+                            <li>
+                                <a href="java_comments.html">Comments</a>
+                            </li>
+                            <li>
+                                <a href="java_variables.html">Variables</a>
+                            </li>
+                            <li>
+                                <a href="java_data_types.html">Data Types</a>
+                            </li>
+                            <li>
+                                <a href="java_type_casting.html">Type Casting</a>
+                            </li>
+                            <li>
+                                <a href="java_operators.html">Operators</a>
+                            </li>
+                            <li>
+                                <a href="java_strings.html">Strings</a>
+                            </li>
+                            <li>
+                                <a href="java_math.html">Math</a>
+                            </li>
+                            <li>
+                                <a href="java_booleans.html">Booleans</a>
+                            </li>
+                            <li>
+                                <a href="java_if_else.html">If...Else</a>
+                            </li>
+                            <li>
+                                <a href="java_switch.html">Switch</a>
+                            </li>
+                            <li>
+                                <a href="java_while_loop.html">While Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_for_loop.html">For Loop</a>
+                            </li>
+                            <li>
+                                <a href="java_break.html">Break/Continue</a>
+                            </li>
+                            <li>
+                                <a href="java_arrays.html">Arrays</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe7b7</i>
+                            Java Methods</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_methods.html">Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_method_parameters.html">Method Parameters</a>
+                            </li>
+                            <li>
+                                <a href="java_method_overloading.html">Method Overloading</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe616</i>
+                            Java Classes</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_oop.html">OOP</a>
+                            </li>
+                            <li>
+                                <a href="java_classes.html">Classes/Objects</a>
+                            </li>
+                            <li>
+                                <a href="java_class_attributes.html">Class Attributes</a>
+                            </li>
+                            <li>
+                                <a href="java_class_methods.html">Class Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_constructors.html">Constructors</a>
+                            </li>
+                            <li>
+                                <a href="java_modifiers.html">Modifiers</a>
+                            </li>
+                            <li>
+                                <a href="#">Encapsulation</a>
+                            </li>
+                            <li>
+                                <a href="#">Packages/API</a>
+                            </li>
+                            <li>
+                                <a href="#">Inheritance</a>
+                            </li>
+                            <li>
+                                <a href="#">Polymorphism</a>
+                            </li>
+                            <li>
+                                <a href="#">Inner Classes</a>
+                            </li>
+                            <li>
+                                <a href="#">Abstraction</a>
+                            </li>
+                            <li>
+                                <a href="#">Interface</a>
+                            </li>
+                            <li>
+                                <a href="#">Enums</a>
+                            </li>
+                            <li>
+                                <a href="#">User Input</a>
+                            </li>
+                            <li>
+                                <a href="#">Date</a>
+                            </li>
+                            <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+                            <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+                            <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+                            <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe61a</i>
+                            Java File Handling</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_files.html">Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_create.html">Create/Write Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_read.html">Read Files</a>
+                            </li>
+                            <li>
+                                <a href="java_files_delete.html">Delete Files</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe603</i>
+                            Java How To</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="iconfont">&#xe64b</i>
+                            Java Reference</a>
+                        <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li>
+                                <a href="java_ref_keywords.html">Keywords</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_string.html">String Methods</a>
+                            </li>
+                            <li>
+                                <a href="java_ref_math.html">Math Methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="overview-wrap">
+                                <h1>Java <span class="color_h1">Packages</span></h1>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_encapsulation.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_inheritance.html">Next ❯</a>
+                                </div>
+                                <hr>
+
+                                <h2>Java Packages &amp; API</h2>
+                                <p>A package in Java is used to group related classes. Think of it as
+                                    <strong>a folder in a file directory</strong>. We use packages to avoid name conflicts, and
+                                    to write a better maintainable code. Packages are divided into two categories:</p>
+                                <ul>
+                                    <li>Built-in Packages (packages from the Java API)</li>
+                                    <li>User-defined Packages (create your own packages)</li>
+                                </ul>
+                                <hr>
+                                <h2>Built-in Packages</h2>
+                                <p>The Java API is a library of prewritten classes, that are free to use, included in the
+                                    Java Development Environment.</p>
+                                <p>The library contains components for managing input, database programming, and much much
+                                    more. The complete list can be found at Oracles website: <a href="https://docs.oracle.com/javase/8/docs/api/" target="_blank">https://docs.oracle.com/javase/8/docs/api/</a>.</p>
+                                <p>The library is divided into <strong>packages</strong> and <strong>classes</strong>.
+                                    Meaning you can either import a single class (along with its methods and
+                                    attributes), or a whole package that contain
+                                    all the classes that belong to the specified package.</p>
+                                <p>To use a class or a package from the library, you need to use the <code class="ej-codespan">import</code>
+                                    keyword:</p>
+
+                                <div class="ej-example">
+                                    <h3>Syntax</h3>
+                                    <pre class="language-java ej-white"><code>import <em>package</em>.<em>name</em>.<em>Class</em>;   // Import a single class
+import <em>package</em>.<em>name</em>.*;   // Import the whole package
+</code></pre>
+                                </div>
+
+                                <hr>
+
+                                <h2>Import a Class</h2>
+                                <p>If you find a class you want to use, for example, the <code class="ej-codespan">Scanner</code> class, <strong>which is used to get
+                                    user input</strong>, write the following code:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class="language-java ej-white"><code>import java.util.Scanner;
+</code></pre>
+                                </div>
+
+                                <p>In the example above, <code class="ej-codespan">java.util</code> is a package, while <code class="ej-codespan">Scanner</code> is a class of
+                                    the <code class="ej-codespan">java.util</code> package.</p>
+
+                                <p>To use the <code class="ej-codespan">Scanner</code> class, create an object of the class and use any of the available methods found in the <code class="ej-codespan">Scanner</code> class documentation.
+                                    In our example, we will use the <code class="ej-codespan">nextLine()</code> method, which is used to read a
+                                    complete line:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <p>Using the <code class="ej-codespan">Scanner</code> class to get user input:</p>
+                                    <pre class="language-java ej-white"><code>import java.util.Scanner;
+
+class MyClass {
+&nbsp; public static void main(String[] args) {
+&nbsp;&nbsp;&nbsp; Scanner myObj = new Scanner(System.in);
+&nbsp;&nbsp;&nbsp; System.out.println("Enter username");
+
+&nbsp;&nbsp;&nbsp; String userName = myObj.nextLine();
+&nbsp;&nbsp;&nbsp; System.out.println("Username is: " + userName);
+&nbsp; }
+}
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>Import a Package</h2>
+
+                                <p>There are many packages to choose from. In the previous example, we used the <code class="ej-codespan">Scanner</code> class from the <code class="ej-codespan">java.util</code> package. This package also contains date and time
+                                    facilities, random-number generator and other utility classes.</p>
+                                <p>To import a whole package, end the sentence with an asterisk sign (<code class="ej-codespan">*</code>).
+                                    The following example
+                                    will import ALL the classes in the <code class="ej-codespan">java.util</code> package:</p>
+
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <pre class="language-java ej-white"><code>import java.util.*;
+</code></pre>
+                                </div>
+                                <hr>
+
+                                <h2>User-defined Packages</h2>
+                                <p>To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:</p>
+                                <div class="ej-example">
+                                    <h3>Example</h3>
+                                    <div class="ej-white notranslate javaHigh ej-margin-bottom" style="padding:1px 16px"><span class="javacolor" style="color:black"><span class="javanumbercolor" style="color:red">
+</span>    <pre>└── root
+  └── mypack
+    └── MyPackageClass.<span class="javapropertycolor" style="color:black">java
+</span></pre>
+ </span></div>
+                                </div>
+
+                                <p>To create a package, use the <code class="ej-codespan">package</code> keyword:</p>
+                                <div class="ej-example">
+                                    <h3>MyPackageClass.java</h3>
+                                    <pre class="language-java ej-white"><code>package mypack;
+class MyPackageClass {
+&nbsp; public static void main(String[] args) {
+&nbsp;&nbsp;&nbsp; System.out.println("This is my package!");
+&nbsp; }
+}
+</code></pre>
+                                </div>
+
+                                <p>Save the file as <b>MyPackageClass.java</b>, and compile it:</p>
+                                <div class="ej-example">
+                                    <div class="ej-code notranslate ej-black">
+                                        C:\Users\<em>Your Name</em>&gt;javac MyPackageClass.java
+                                    </div>
+                                </div>
+
+                                <p>Then compile the package:</p>
+                                <div class="ej-example">
+                                    <div class="ej-code notranslate ej-black">
+                                        C:\Users\<em>Your Name</em>&gt;javac -d . MyPackageClass.java</div>
+                                </div>
+                                <div class="ej-note ej-panel">
+                                    <p>This forces the compiler to create the "mypack" package.</p>
+                                    <p>The <code class="ej-codespan">-d</code> keyword specifies the destination for where to save the class file. You
+                                        can use any directory name, like c:/user (windows), or, if you want to keep
+                                        the package within the same directory, you can use the dot sign "<code class="ej-codespan">.</code>", like in
+                                        the example above.</p>
+                                    <p><strong>Note:</strong> The package name should be written in lower case to avoid conflict with class names.</p>
+                                </div>
+                                <p>When we compiled the package in the example above, a new folder was created, called "mypack".</p>
+                                <p>To run the <b>MyPackageClass.java</b> file, write the following:</p>
+                                <div class="ej-example">
+                                    <div class="ej-code notranslate ej-black">
+                                        C:\Users\<em>Your Name</em>&gt;java mypack.MyPackageClass
+                                    </div>
+                                </div>
+                                <p>The output will be:</p>
+                                <div class="ej-example ej-padding-16">
+                                    <div class="ej-padding notranslate ej-black">
+                                        <code class="notranslate">
+                                            This is my package!
+                                        </code>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <div class="ej-clear nextprev">
+                                    <a class="ej-left ej-btn" href="java_encapsulation.html">❮ Previous</a>
+                                    <a class="ej-right ej-btn" href="java_inheritance.html">Next ❯</a>
+                                </div>
+                            </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+

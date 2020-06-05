@@ -1,0 +1,611 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Epiphany Java &mdash; Online Java Learning Website Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online Java Learning Website by Media2020Gp08"/>
+  <meta name="keywords"
+        content="free java learning website, java, Epiphany Java, learn java, mobile first"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+  <!-- Fontfaces CSS-->
+  <link href="../css/font-face.css" rel="stylesheet" media="all">
+  <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="../css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+  <!-- Vendor CSS-->
+  <link href="../vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/wow/animate.css" rel="stylesheet" media="all">
+  <link href="../vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/slick/slick.css" rel="stylesheet" media="all">
+  <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+  <link href="../vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+  <!-- Iconfont CSS-->
+  <link href="../css/iconfont.css" rel="stylesheet" media="all">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/theme.css">
+
+  <!-- Modernizr JS -->
+  <script src="../js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body onload="ej_code_theme(this)">
+
+<div class="fh5co-loader"></div>
+
+<div id="page">
+  <nav class="fh5co-nav head-nav" role="navigation">
+    <div class="top-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <div id="fh5co-logo"><a href="../index.html"><i class="icon-study"></i>Epiphany Java<span>.</span></a></div>
+          </div>
+          <div class="col-xs-5 text-right search-div">
+                        <img class="java-icon" src="../images/java.png">
+                        <input class="search" id="ej-search-input" type="text" name="serach" placeholder="Search..."
+                               list="DATALIST">
+                        <datalist id="DATALIST"></datalist>
+                        <button class="search-button" onclick="handleSearchClick()">
+                            <img class="search-icon" src="../images/search.png">
+                        </button>
+                    </div>
+          <div class="col-xs-3 text-right menu-1">
+            <ul>
+              <li><a class='menu-a' href="../index.html">Home</a></li>
+              <li class="active">
+                <a class='menu-a' href="#">Courses</a>
+              </li>
+              <li><a class='menu-a' href="../about.html">About</a></li>
+                            <a class='dark-mode' href="javascript:void(0);" onclick="switch_dark(this)"><i
+                                id = 'dark-icon' class="iconfont dark-mode">&#xe611</i></a>
+                        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <aside class="menu-sidebar d-none d-lg-block">
+    <div class="menu-sidebar__content js-scrollbar1">
+      <nav class="navbar-sidebar">
+        <ul class="list-unstyled navbar__list">
+          <li class="active has-sub">
+            <a class="js-arrow sidebar" href="#">
+              <i class="iconfont">&#xe600</i>
+              Java Tutorial</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="courses.html">HOME</a>
+              </li>
+              <li>
+                <a href="java_intro.html">Intro</a>
+              </li>
+              <li>
+                <a href="java_getstarted.html">Get Started</a>
+              </li>
+              <li>
+                <a href="java_syntax.html">Syntax</a>
+              </li>
+              <li>
+                <a href="java_comments.html">Comments</a>
+              </li>
+              <li>
+                <a href="java_variables.html">Variables</a>
+              </li>
+              <li>
+                <a href="java_data_types.html">Data Types</a>
+              </li>
+              <li>
+                <a href="java_type_casting.html">Type Casting</a>
+              </li>
+              <li>
+                <a href="java_operators.html">Operators</a>
+              </li>
+              <li>
+                <a href="java_strings.html">Strings</a>
+              </li>
+              <li>
+                <a href="java_math.html">Math</a>
+              </li>
+              <li>
+                <a href="java_booleans.html">Booleans</a>
+              </li>
+              <li>
+                <a href="java_if_else.html">If...Else</a>
+              </li>
+              <li>
+                <a href="java_switch.html">Switch</a>
+              </li>
+              <li>
+                <a href="java_while_loop.html">While Loop</a>
+              </li>
+              <li>
+                <a href="java_for_loop.html">For Loop</a>
+              </li>
+              <li>
+                <a href="java_break.html">Break/Continue</a>
+              </li>
+              <li>
+                <a href="java_arrays.html">Arrays</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="active has-sub">
+            <a class="js-arrow" href="#">
+              <i class="iconfont">&#xe7b7</i>
+              Java Methods</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="java_methods.html">Methods</a>
+              </li>
+              <li>
+                <a href="java_method_parameters.html">Method Parameters</a>
+              </li>
+              <li>
+                <a href="java_method_overloading.html">Method Overloading</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active has-sub">
+            <a class="js-arrow" href="#">
+              <i class="iconfont">&#xe616</i>
+              Java Classes</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="java_oop.html">OOP</a>
+              </li>
+              <li>
+                <a href="java_classes.html">Classes/Objects</a>
+              </li>
+              <li>
+                <a href="java_class_attributes.html">Class Attributes</a>
+              </li>
+              <li>
+                <a href="java_class_methods.html">Class Methods</a>
+              </li>
+              <li>
+                <a href="java_constructors.html">Constructors</a>
+              </li>
+              <li>
+                <a href="java_modifiers.html">Modifiers</a>
+              </li>
+              <li>
+                <a href="#">Encapsulation</a>
+              </li>
+              <li>
+                <a href="#">Packages/API</a>
+              </li>
+              <li>
+                <a href="#">Inheritance</a>
+              </li>
+              <li>
+                <a href="#">Polymorphism</a>
+              </li>
+              <li>
+                <a href="#">Inner Classes</a>
+              </li>
+              <li>
+                <a href="#">Abstraction</a>
+              </li>
+              <li>
+                <a href="#">Interface</a>
+              </li>
+              <li>
+                <a href="#">Enums</a>
+              </li>
+              <li>
+                <a href="#">User Input</a>
+              </li>
+              <li>
+                <a href="#">Date</a>
+              </li>
+              <li>
+                                <a href="java_arraylist.html">ArrayList</a>
+                            </li>
+              <li>
+                                <a href="java_hashmap.html">HashMap</a>
+                            </li>
+              <li>
+                                <a href="java_wrapper_classes.html">Wrapper Classes</a>
+                            </li>
+
+              <li>
+                                <a href="java_try_catch.html">Exceptions</a>
+                            </li>
+            </ul>
+          </li>
+          <li class="active has-sub">
+            <a class="js-arrow" href="#">
+              <i class="iconfont">&#xe61a</i>
+              Java File Handling</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="java_files.html">Files</a>
+              </li>
+              <li>
+                <a href="java_files_create.html">Create/Write Files</a>
+              </li>
+              <li>
+                <a href="java_files_read.html">Read Files</a>
+              </li>
+              <li>
+                <a href="java_files_delete.html">Delete Files</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active has-sub">
+            <a class="js-arrow" href="#">
+              <i class="iconfont">&#xe603</i>
+              Java How To</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="java_howto_add_two_numbers.html">Add Two Numbers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active has-sub">
+            <a class="js-arrow" href="#">
+              <i class="iconfont">&#xe64b</i>
+              Java Reference</a>
+            <ul class="list-unstyled navbar__sub-list js-sub-list">
+              <li>
+                <a href="java_ref_keywords.html">Keywords</a>
+              </li>
+              <li>
+                <a href="java_ref_string.html">String Methods</a>
+              </li>
+              <li>
+                <a href="java_ref_math.html">Math Methods</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+                        <a href="java_quiz.html">
+                            <i class="iconfont">&#xe638</i>
+                            Java Quiz</a>
+                    </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="page-container">
+    <div class="main-content">
+      <div class="section__content section__content--p30">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="overview-wrap">
+
+
+                  <h1>Java <span class="color_h1">Keywords</span></h1>
+                  <div class="ej-clear nextprev">
+                    <a class="ej-left ej-btn" href="java_howto_add_two_numbers.html">❮ Previous</a>
+                    <a class="ej-right ej-btn" href="java_ref_string.html">Next ❯</a>
+                  </div>
+                  <hr>
+
+                  <h2>Java Reserved Keywords</h2>
+                  <p>Java has a set of keywords that are reserved words that cannot be used as
+                    variables, methods, classes, or any other identifiers:</p>
+
+                  <table class="ej-table-all notranslate">
+                    <tbody><tr>
+                      <th style="width:20%">Keyword</th>
+                      <th>Description</th>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_abstract.html">abstract</a></td>
+                      <td>A non-access modifier. Used for classes and methods: An abstract class cannot be used to create objects (to access it, it must be inherited from another class). An abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)</td>
+                    </tr>
+                    <tr>
+                      <td>assert</td>
+                      <td>For debugging</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_boolean.html">boolean</a></td>
+                      <td>A data type that can only store true and false values</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_break.html">break</a></td>
+                      <td>Breaks out of a loop or a switch block</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_byte.html">byte</a></td>
+                      <td>A data type that can store whole numbers from -128 and 127</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_case.html">case</a></td>
+                      <td>Marks a block of code in switch statements</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_catch.html">catch</a></td>
+                      <td>Catches exceptions generated by try statements</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_char.html">char</a></td>
+                      <td>A data type that is used to store a single character</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_class.html">class</a></td>
+                      <td>Defines a class</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_break.html">continue</a></td>
+                      <td>Continues to the next iteration of a loop</td>
+                    </tr>
+                    <tr>
+                      <td>const</td>
+                      <td>Defines a constant. <span class="deprecated">Not in use</span> - use <a href="ref_keyword_final.html">final</a> instead</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_default.html">default</a></td>
+                      <td>Specifies the default block of code in a switch statement</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_do.html">do</a></td>
+                      <td>Used together with while to create a do-while loop</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_double.html">double</a></td>
+                      <td>A data type that can store whole numbers from 1.7e−308 to 1.7e+308</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_else.html">else</a></td>
+                      <td>Used in conditional statements</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_enum.html">enum</a></td>
+                      <td>Declares an enumerated (unchangeable) type</td>
+                    </tr>
+                    <tr>
+                      <td>exports</td>
+                      <td>Exports a package with a module. New in Java 9</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_extends.html">extends</a></td>
+                      <td>Extends a class (indicates that a class is inherited from another class)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_final.html">final</a></td>
+                      <td>A non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_finally.html">finally</a></td>
+                      <td>Used with exceptions, a block of code that will be executed no matter if there is an exception or not</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_float.html">float</a></td>
+                      <td>A data type that can store whole numbers from 3.4e−038 to 3.4e+038</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_for.html">for</a></td>
+                      <td>Create a for loop</td>
+                    </tr>
+                    <tr>
+                      <td>goto</td>
+                      <td><span class="deprecated">Not in use, and has no function</span></td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_if.html">if</a></td>
+                      <td>Makes a conditional statement</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_implements.html">implements</a></td>
+                      <td>Implements an interface</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_import.html">import</a></td>
+                      <td>Used to import a package, class or interface</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_instanceof.html">instanceof</a></td>
+                      <td>Checks whether an object is an instance of a specific class or an interface</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_int.html">int</a></td>
+                      <td>A data type that can store whole numbers from -2147483648 to 2147483647</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_interface.html">interface</a></td>
+                      <td>Used to declare a special type of class that only contains abstract methods</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_long.html">long</a></td>
+                      <td>A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808</td>
+                    </tr>
+                    <tr>
+                      <td>module</td>
+                      <td>Declares a module. New in Java 9</td>
+                    </tr>
+                    <tr>
+                      <td>native</td>
+                      <td>Specifies that a method is not implemented in the same Java source file (but in another language)</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_new.html">new</a></td>
+                      <td>Creates new objects</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_package.html">package</a></td>
+                      <td>Declares a package</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_private.html">private</a></td>
+                      <td>An access modifier used for attributes, methods and constructors, making them only accessible within the declared class</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_protected.html">protected</a></td>
+                      <td>An access modifier used for attributes, methods and constructors, making them accessible in the same package and subclasses</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_public.html">public</a></td>
+                      <td>An access modifier used for classes, attributes, methods and constructors, making them accessible by any other class</td>
+                    </tr>
+                    <tr>
+                      <td>requires</td>
+                      <td>Specifies required libraries inside a module. New in Java 9</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_return.html">return</a></td>
+                      <td>Finished the execution of a method, and can be used to return a value from a method</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_short.html">short</a></td>
+                      <td>A data type that can store whole numbers from -32768 to 32767</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_static.html">static</a></td>
+                      <td>A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class</td>
+                    </tr>
+                    <tr>
+                      <td>strictfp</td>
+                      <td>Restrict the precision and rounding of floating point calculations</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_super.html">super</a></td>
+                      <td>Refers to superclass (parent) objects</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_switch.html">switch</a></td>
+                      <td>Selects one of many code blocks to be executed</td>
+                    </tr>
+                    <tr>
+                      <td>synchronized</td>
+                      <td>A non-access modifier, which specifies that methods can only be accessed by one thread at a time</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_this.html">this</a></td>
+                      <td>Refers to the current object in a method or constructor</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_throw.html">throw</a></td>
+                      <td>Creates a custom error</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_throws.html">throws</a></td>
+                      <td>Indicates what exceptions may be thrown by a method</td>
+                    </tr>
+                    <tr>
+                      <td>transient</td>
+                      <td>A non-accesss modifier, which specifies that an attribute is not part of an object's persistent state</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_try.html">try</a></td>
+                      <td>Creates a try...catch statement</td>
+                    </tr>
+                    <tr>
+                      <td>var</td>
+                      <td>Declares a variable. New in Java 10</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_void.html">void</a></td>
+                      <td>Specifies that a method should not have a return value</td>
+                    </tr>
+                    <tr>
+                      <td>volatile</td>
+                      <td>Indicates that an attribute is not cached thread-locally, and is always read from the "main memory"</td>
+                    </tr>
+                    <tr>
+                      <td><a href="ref_keyword_while.html">while</a></td>
+                      <td>Creates a while loop</td>
+                    </tr>
+                    </tbody></table>
+
+                  <p><strong>Note:</strong> <code class="ej-codespan">true</code>, <code class="ej-codespan">false</code>, and <code class="ej-codespan">null</code> are not keywords, but they are literals and reserved words that cannot be used as identifiers.</p>
+                  <br>
+                <hr>
+                  <div class="ej-clear nextprev">
+                    <a class="ej-left ej-btn" href="java_howto_add_two_numbers.html">❮ Previous</a>
+                    <a class="ej-right ej-btn" href="java_ref_string.html">Next ❯</a>
+                  </div>
+                  <hr>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="gototop js-top">
+  <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="../js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="../js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="../js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="../js/owl.carousel.min.js"></script>
+<!-- Flexslider -->
+<script src="../js/jquery.flexslider-min.js"></script>
+<!-- countTo -->
+<script src="../js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/magnific-popup-options.js"></script>
+<!-- Count Down -->
+<script src="../js/simplyCountup.js"></script>
+<!-- Main -->
+<script src="../js/main.js"></script>
+<script>
+    var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate()
+    });
+
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+</script>
+</body>
+</html>
+
